@@ -1,0 +1,195 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+table {
+    max-width: 500px;
+    margin: auto;
+}
+
+td.text {
+    text-align: center;
+    padding-top: 40px;
+}
+
+tbody {
+    display: block;
+    overflow-y: auto;
+    height: 500px;
+}
+
+#attack {
+    background-color: #E21B23;
+    padding: 1%;
+    border-radius: 3px;
+}
+
+#scrollable {
+    display: auto;
+    overflow: hidden;
+}
+
+#scrollable2 {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 17px;
+    box-sizing: content-box;
+}
+
+.stats {
+    padding-top: 8%;
+}
+
+
+/* thead tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+} */
+
+thead,
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+thead {
+    width: calc(100% - 1em)
+}
+
+td {
+    width: 70px;
+}
+
+li {
+    display: inline;
+}
+
+.card {
+    padding-right: 20px;
+    text-align: center;
+}
+
+.fixed {
+    position: fixed;
+    left: 300px;
+    top: 200px;
+}
+
+.jumbotron {
+    height: 100px;
+}
+
+.types {
+    padding: 2%;
+}
+
+.normal {
+    background-color: var(--normal, #908F5E);
+    color: white;
+    text-align: center;
+}
+
+.fire {
+    background-color: var(--fire, #E36D2D);
+    color: white;
+    text-align: center;
+}
+
+.water {
+    background-color: var(--water, #8C9EF2);
+    color: white;
+    text-align: center;
+}
+
+.electric {
+    background-color: var(--electric, #F7CF32);
+    color: white;
+    text-align: center;
+}
+
+.grass {
+    background-color: var(--grass, #64B33D);
+    color: white;
+    text-align: center;
+}
+
+.ice {
+    background-color: var(--ice, #82D0D0);
+    color: white;
+    text-align: center;
+}
+
+.fighting {
+    background-color: var(--fighting, #BA3527);
+    color: white;
+    text-align: center;
+}
+
+.poison {
+    background-color: var(--poison, #9B3E9B);
+    color: white;
+    text-align: center;
+}
+
+.ground {
+    background-color: var(--ground, #DFBC5A);
+    color: white;
+    text-align: center;
+}
+
+.flying {
+    background-color: var(--flying, #A68EEC);
+    color: white;
+    text-align: center;
+}
+
+.psychic {
+    background-color: var(--psychic, #ED4A64);
+    color: white;
+    text-align: center;
+}
+
+.bug {
+    background-color: var(--bug, #93A11C);
+    color: white;
+    text-align: center;
+}
+
+.rock {
+    background-color: var(--rock, #A69133);
+    color: white;
+    text-align: center;
+}
+
+.ghost {
+    background-color: var(--ghost, #6A5390);
+    color: white;
+    text-align: center;
+}
+
+.dragon {
+    background-color: var(--dragon, #584AF2);
+    color: white;
+    text-align: center;
+}
+
+.dark {
+    background-color: var(--dark, #574337);
+    color: white;
+    text-align: center;
+}
+
+.steel {
+    background-color: var(--steel, #A6A6C5);
+    color: white;
+    text-align: center;
+}
+
+.fairy {
+    background-color: var(--fairy, #E792E7);
+    color: white;
+    text-align: center;
+}

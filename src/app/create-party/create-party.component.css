@@ -1,0 +1,14 @@
+.card-columns {
+    background-color: silver;
+    padding: 5%;
+}
+
+.card {
+    background-color: #E21B23;
+}
+
+.container {
+    padding-top: 3%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

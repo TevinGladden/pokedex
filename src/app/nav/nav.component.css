@@ -1,0 +1,29 @@
+.red {
+    background-color: #E21B23;
+}
+
+.text {
+    color: #212529;
+}
+
+li:hover {
+    color: black;
+}
+
+a {
+    font-weight: 20px;
+}
+
+h1,
+h2 {
+    color: silver
+}
+
+li:first {
+    border-right: 1px solid silver;
+}
+
+nav {
+    padding-left: 5%;
+    padding-right: 5%;
+}

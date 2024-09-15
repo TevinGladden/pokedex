@@ -1,0 +1,48 @@
+<div class="jumbotron text-center">
+    <b>Pokedex Number/Name: </b> <input type="text" [(ngModel)]="search" placeholder="Enter Pokedex Number or Pokemon Name">
+    <button (click)="getDetails(toLowerCase(search))">Search</button>
+</div>
+<!-- Displays basic pokemon information, name type id and appearance -->
+<div id="attack" class="container" style=" text-align: center;">
+    <div id="" class="" style=" display: flex; background-color: #E9ECEF;">
+        <table class="table" id="">
+            <thead>
+                <tr>
+                    <th>Pokedex #:</th>
+                    <th>Pokemon Name:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr (click)="getDetails(p.id)" *ngFor="let p of pokedex">
+                    <td id={{p.id}} class="text">{{p.id}}</td>
+                    <td id={{p.name}} class="text">{{p.name}}</td>
+                    <ng-template #elseBlock>
+                    </ng-template>
+                </tr>
+            </tbody>
+        </table>
+        <div class="col-xs-3 col-med-3 col-sm-3 col-lg-3" style="padding-left: 5%; top: 10px; text-align: center;" *ngIf="getFlag()">
+            <h4 style="text-align: center" class="text">#{{pokemon.id}} {{pokemon.name}}</h4>
+            <img src="{{pokemon.sprite}}">
+            <div class="container-fluid">
+                <div style="align-items: center; padding-bottom: 5%">
+                    <span style="border-radius: 3px; margin-right: 10px;" class="text {{pokemon.types[0]}} types">{{capitalize(pokemon.types[0])}}</span>
+                    <span style="border-radius: 3px; margin-right: 10px;" *ngIf="pokemon.types[1]" class="text {{pokemon.types[1]}} types">{{capitalize(pokemon.types[1])}}</span>
+                </div>
+                <div class="stats" style="text-align: center" *ngFor="let stat of pokemon.getStats()">
+                    <p style="border-radius: 3px; text-align: center;" class="text {{stat}}">{{capitalize(stat.name)}}: {{stat.value}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-3 col-med-3 col-sm-3 col-lg-3" style="padding-left: 5%; top: 10px; text-align: center; overflow: hidden;" *ngIf="getFlag()">
+            <div id="" class="overflow: hidden " style="height: 480px ">
+                <h4 style=" text-align: center " class="text ">Attack List</h4>
+                <div id="scrollable2">
+                    <p style="border-radius: 3px; background-color: #E9ECEF; " class="text " *ngFor="let move of pokemon.getMoves() ">
+                        {{capitalize(move)}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
